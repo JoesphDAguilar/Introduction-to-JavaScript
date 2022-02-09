@@ -281,11 +281,32 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(str) {
+  str = str.toLowerCase();
+  const strArray = str.split('');
+  let value = 0;
+
+  for(let i = 0; i <strArray.length; i++){
+    if(strArray[i].includes('a')) {
+      value++
+    }
+    if(strArray[i].includes('e')) {
+      value++
+    }
+    if(strArray[i].includes('i')) {
+      value++
+    }
+    if(strArray[i].includes('o')) {
+      value++
+    }
+    if(strArray[i].includes('u')) {
+      value++
+    }
+  }
+  return value;
 }
 
-
+console.log(vowelCounter('Aurelia'));
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
